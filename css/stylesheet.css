@@ -1,0 +1,450 @@
+*{ box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+body{
+    perspective: 700px;
+}
+header{
+    width: 80%;
+    height: 60px;
+    margin-left: 160px;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    position: fixed;
+    z-index: 40px;
+    opacity: 1;
+    display: flex;
+
+}
+
+.headerimg{
+float: left;
+margin-left: 20px;
+width: 100px;
+    height: 60px;
+}
+
+.headercontent{
+    /* float: left; */
+    list-style: none;
+    margin-left: 80px;
+    margin-top: 25px;
+    color: brown;
+}
+.headercontent a{
+    text-decoration: none;
+    display: inline block;
+}
+.list{
+    list-style-type: none;
+}
+.list li{
+    float: left;
+    margin-left: 50px;
+    font-size: 22px;
+}
+.list li a{
+    color: brown;
+}
+
+
+
+/* a::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 0;
+    opacity: 0;
+    border: 1px solid black;
+}
+.a::after:hover{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+} */
+.headercontent a li{
+    display: inline block;
+    margin-left: 20px;
+    font-size: 28px;
+    color: brown;
+
+}
+li:hover{
+    border: .1px solid black;
+    transition: .2px;
+}
+
+.menu{
+    position: relative;
+}
+.submenu{
+    margin-left: 20px;
+    position: absolute;
+    display: none;
+    width: 200px;
+    border: 2px solid grey;
+}
+.menu:hover .submenu{
+    display: block;
+}
+
+
+
+
+.headericon{
+    float: right;
+    margin-top: 25px;
+    color: brown;
+}
+.headericon a{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+        margin-top: 25px;
+        margin-left: 20px;
+}
+.s{
+    position: absolute;
+    margin-left: 0px;
+    font-size: 16px;
+    margin-top:17px ;
+    background-color: brown;
+    color:white;
+    margin-left: -10px;
+    /* width: 50px; */
+    /* margin-right: -1px; */
+    /* height: 40px; */
+    border-radius: 50%;
+}
+.ss{
+    font-size: 24px;
+    margin-left:-6px;
+     color: black;
+
+}
+
+
+
+.container{
+    width: 80%;
+    margin: auto;
+    height: 700px;
+}
+.firstsection{
+    width: 100%;
+    top: 100px;
+position: relative;    
+}
+.firimg{
+    position: absolute;
+    z-index: -1;
+    opacity: 1;
+
+}
+.secondsec{
+    position: relative;
+    width: 100%;
+   margin: auto;
+}
+.secline:hover{
+transform: scale(1.5,1);
+}
+/* secondsec */
+.secparent{
+
+    width: 100%;
+    /* background-color: aqua; */
+}
+.sectitle{
+    margin-left: 500px;
+}
+.secline{
+    /* position: absolute; */
+    width: 80px;
+    height: 2px;
+    background-color: brown;
+    margin-left: 70px;
+    margin-top: 5px;
+    transition: 1s
+
+}
+
+.sectitle:hover .secline{
+    transform: scale(2,1);
+}
+.sech{
+    font-size: 20px;
+    font-weight: 100;
+}
+.secspan{
+    font-size: 20px;
+    font-weight: 900;
+}
+.secicon{
+    font-size: 30px;
+    background-color: brown;
+    color: white;
+    margin-left: 50px;
+    opacity: 0;
+    
+}
+.seccontent:hover .secicon{
+    opacity: 1;
+}
+.secondcontent{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* third */
+.thirdcontent{
+    width: 560px;
+    background-color: rgb(236, 235, 234);
+    height: 300px;
+
+}
+.thirdicon{
+    font-size: 50px;
+    /* margin-top: 30px; */
+color: brown;}
+.thirdtitle{
+    margin-top: 18px;
+    color: brown;
+  
+
+    
+}
+.thirdh{
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: -5;
+}
+.thirdspan{
+    font-size: 30px;
+    font-weight: 900;
+}
+.thirdp{
+    margin-top: 20px;
+    line-height: 22px;
+}
+.thline{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+   
+    }
+ .thirdline{
+        width: 60px;
+        height: 3px;
+        background-color:brown;
+        margin-right: 4px;
+    }
+
+.thirdparent{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; 
+    margin-top: -250px;
+}
+.thirdimg{
+    background-image: url(../images/cms-banner-1.jpg);
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+}
+.thirdimg:hover{
+    transform: scale(1.1,1.1);
+}
+.imgup{
+    margin-top: 20px;
+    margin-left: 10px;
+    position: absolute;
+    line-height: 24px;
+}
+.thirdimgg{
+    background-image: url(../images/cms-banner-2.jpg);
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+}
+.thirdimgg:hover{
+    transform: scale(1.1,1.1);
+}
+.imgupp{
+    margin-top: 20px;
+    margin-left: 10px;
+    position: absolute;
+    line-height: 24px;
+}
+/* fifth */
+.fifth{
+    margin-top: 100px;
+}
+.fifthtitle{
+    margin: auto;
+    margin-left: 500px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.fifthline{
+    width: 100px;
+    height: 3px;
+    background-color: brown;
+    margin-left: 90px;
+    transition: 1s;
+}
+.fifthtitle:hover .fifthline{
+    transform: scale(2,1);
+}
+.fifthword{
+    margin-top: 30px;
+    margin-left: 360px;
+}
+.sp{
+    margin-left: 40px;
+    font-weight: 100;
+}
+.fifthcontent{
+    width: 350px;
+height: 460px;
+    margin-top: 50px;
+    position: relative;
+    transition: .3s;
+    transform-style: preserve-3d;}
+ .front{
+    background-image: url(../images/chair1.jpg);
+width: 350px;
+height: 450px;
+background-size: cover;
+background-color: aquamarine;
+position: absolute;
+backface-visibility: hidden;
+z-index: 4;
+/* opacity: 0; */
+
+}
+.back{
+    background-image: url(../images/chair2.jpg);
+    width: 350px;
+    height: 450px;
+    background-size: cover;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 2;
+    transform: rotateY(180deg);
+    /* opacity: 0; */
+    
+    
+}
+.fifthcontent:hover {
+    transform: rotateY(180deg);
+
+}
+.fifthico{
+    margin-left: 130px;
+    position: absolute;
+}
+.imgstar{
+    position: absolute;
+}
+.fifthicon{
+    margin-top: 250px;
+    position: absolute;
+    margin-left: 160px;
+    font-size: 24px;
+    margin-left: 30px;
+    color: brown;
+}
+.fifthicon1{
+    margin-top: 250px;
+    position: absolute;
+    font-size: 24px;
+    margin-left: 60px;
+    color: brown;
+
+}
+.fifthicon2{
+    margin-top: 250px;
+    position: absolute;
+    font-size: 24px;
+    margin-left: 90px;
+    color: brown;
+
+}
+.fifthicon3{
+    margin-top: 250px;
+    position: absolute;
+    font-size: 24px;
+ color: brown;
+
+}
+.frontback{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto;
+    grid-gap: 20px ;
+   
+}
+.co{
+    flex-wrap: wrap;
+}
+.coo{
+    flex-wrap: wrap;
+}
+.forthparent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -370px;
+}
+.forth{
+    width: 200px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid gray;
+}
+.forthcontent{
+    margin-left: 60px;
+    width: 70px;
+height: 70px;
+    margin-top: 10px;
+    position: relative;
+    transition: .3s;
+    transform-style: preserve-3d;
+
+}
+.forthfront{
+
+background-size: cover;
+position: absolute;
+backface-visibility: hidden;
+z-index: 4;
+}
+.forthback{
+   
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+    transform: rotatex(180deg);
+    opacity: 1;
+}
+.forthcontent:hover{
+    transform: rotatex(180deg);
+}
+.forthitem{
+    margin-left: 30px;
+}
+.forthp{
+    font-size: ;
+}
+hr{
+    margin-top: -500px;
+}
